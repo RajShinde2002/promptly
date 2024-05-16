@@ -1,7 +1,6 @@
 import "@styles/globals.css";
 import Nav from "@components/Nav";
 import Provider from "@components/Provider";
-import favicon from "@public/assets/images/logo.svg"
 
 export const metadata = {
   title: "Promptly",
