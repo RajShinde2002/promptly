@@ -11,8 +11,10 @@ export const connectToDB = async () => {
   }
 
   try {
-    await mongoose.connect("mongodb+srv://rjshinde45:Raj2002@cluster0.thxmbzn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+    await mongoose.connect(process.env.MONGODB_URI, {
       dbName: "share_prompt",
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
     });
     
     isConnected = true;
